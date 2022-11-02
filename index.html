@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>registation form</title>
+        <style>
+            body{
+                background: #A22B56;
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            form[data-anil=xyz]{
+                width: 60%;
+                min-height: 580px;
+                /*
+                i used margin two property here T/B L/R                
+                */
+                margin: 70px auto;
+                padding-top: 20px;
+                background-color: rgba(0, 0, 0, 0.3)
+            }
+            form[data-anil=xyz] > table{
+                width: 60%;
+                margin: auto;
+            }
+            form[data-anil=xyz] > table td{
+                padding: 5px;
+            }
+            form[data-anil=xyz] > table input{
+                width: 100%;
+                height: 30px;
+                
+            }
+            form label{
+                color: white;
+                
+                
+            }
+            .mylabel{
+                display: inline-block;
+                width: 32%;
+            }
+            .mylabel input{
+                position: relative;
+                top: -25px;
+                right: -20px;
+            }
+            .lang{
+                width: 70%;
+                height: 30px;
+            }
+            .submit{
+                font-size: 1em;
+                font-weight: bold;
+                border-radius: 30px;
+                border: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form data-anil="xyz">
+            <table  >
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="fname">Name:</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <input id="fname" type="text" name="name" placeholder="Your name" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="email">Email:</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <input id="email" type="email" name="email" placeholder="Your email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="password">password:</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <input id="password" type="password" name="password" placeholder="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="Pn">phone number:</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <input id="Pn" type="phone number" name="phone number" placeholder="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="gen">Gender:</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <label class="mylabel">
+                                Male:
+                                <input type="radio" name="gender" value="Male" />
+                            </label>
+                            <label class="mylabel">
+                                Female:
+                                <input type="radio" name="Female" value="Female" />
+                            </label>
+                            <label class="mylabel">
+                                other:
+                                <input type="radio" name="other" value="other" />
+                            </label>
+                           
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="lang">Language</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <select name="Language" class="lang">
+                                <option value="">Select Language</option>
+                                <option value="english">English</option>
+                                <option value="hindi">Hindi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="zipcode">Zip:</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <input id="zipcode" type="zipcode" name="zipcode" placeholder="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:40% ;">
+                            <label for="About">About</label>
+                        </td>
+                        <td style="width:60% ;">
+                            <textarea id="About" name="about" rows="5" cols="55" placeholder="write about your self"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input class="submit" type="submit" name="submit" value="Register" />
+                        </td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
